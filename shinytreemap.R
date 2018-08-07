@@ -4,15 +4,8 @@ library(treemap)
 library(dplyr)
 library(gridBase)
 
-weights <- read.csv("/home/atai/Downloads/CPI dashboard/stackbar/data3_treemap.csv", stringsAsFactors = FALSE)
 
-weights <- weights %>% filter(!levels %in% "All-items") %>% 
-  filter(Ranking %in% c("1") & Region %in% c("Canada", "Ontario", "Quebec"))%>% 
-  select("Region", "Level.0", "Level.1", "X2015") 
-
-#saveRDS(weights,"/home/atai/Documents/R projects/treemap/stackoverflow/treemap1.rds")
-
-weights <- readRDS("/home/atai/Documents/R projects/treemap/stackoverflow/treemap1.rds")
+weights <- readRDS("/data/treemap1.rds")
 
 ### Handle cliks on a treemap
 tmLocate <-
