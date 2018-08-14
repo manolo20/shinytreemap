@@ -5,7 +5,7 @@ library(dplyr)
 library(gridBase)
 
 
-weights <- readRDS("manolo20/shinytreemap/treemap1.rds")
+weights <- readRDS("/shinytreemap/treemap1.rds")
 
 ### Handle cliks on a treemap
 tmLocate <-
