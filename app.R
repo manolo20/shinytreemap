@@ -5,7 +5,11 @@ library(dplyr)
 library(gridBase)
 
 
-weights <- readRDS("data/treemap1.rds")
+weights <- readRDS("treemap1.rds")
+
+# Note: I also uploaded treemap1.rds to master folder and read the data set as readRDS(treemap1.rds") and it worked
+# Then I changed the app.R again to readRDS("data/treemap1.rds") and it worked. My guess is that the .rds was saved 
+# in the computer's memory
 
 ### Handle cliks on a treemap
 tmLocate <-
