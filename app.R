@@ -5,7 +5,7 @@ library(dplyr)
 library(gridBase)
 
 
-weights <- readRDS("treemap1.rds")
+weights <- readRDS("data/treemap1.rds")
 
 ### Handle cliks on a treemap
 tmLocate <-
